@@ -227,6 +227,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       	// the GUI frame will be hidden but I want it to do nothing.
          this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
       
+         // Allow files to be dragged onto the window and opened in the editor.
+         FileDropHandler.install(this);
+      
          this.pack();
          this.setVisible(true);
       }
